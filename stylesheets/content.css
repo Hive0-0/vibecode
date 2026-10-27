@@ -1,0 +1,539 @@
+body {
+  background-color: #0b0f1a;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+.cover {
+  padding: 3.1vw 4.2vw;
+}
+.cover {
+  position: relative;
+  padding: 3.1vw 4.2vw;
+}
+
+.cover-title {
+  font-family: "Kudry", serif;
+ font-size: 6.9vw;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+}
+.ticket {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -2vw;
+  margin-left: -4vw;
+  transform: rotate(-5deg);
+}
+
+.ticket-part {
+  display: block;
+  height: 50vw;
+  width: auto;
+  flex-shrink: 0;
+}
+.star {
+  position: absolute;
+  right: 3vw;
+  bottom: -14vw;
+  width: 24vw;
+  height: auto;
+  z-index: 2;
+}
+.screen2 {
+  padding: 8vw 4.2vw;
+}
+
+.screen2-title {
+  font-family: "Kudry", serif;
+  font-size: 6.9vw;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.screen2-text {
+  margin-left: 2.8vw;
+  margin-top: 4vw;
+  max-width: 63vw;
+}
+
+.screen2-text p {
+  font-family: "TTMoons", serif;
+  font-size: 2.5vw;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.screen2-text p + p {
+  margin-top: 3vw;
+}
+.stage {
+  position: relative;
+  width: 104vw;
+  margin: 6vw 0 0 -6.2vw;
+}
+
+.theatre {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 4;
+  clip-path: inset(0 0 15% 0);
+}
+
+.theatre-floor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  clip-path: inset(85% 0 0 0);
+}
+
+.curtain {
+  position: absolute;
+  top: 15%;
+  width: 46%;
+  height: auto;
+  z-index: 2;
+}
+
+.curtain-left {
+  left: 7%;
+  transform-origin: left center;
+}
+
+.curtain-right {
+  right: 7%;
+  transform-origin: right center;
+}
+
+.stage-items {
+  position: absolute;
+  top: 16%;
+  left: 7%;
+  right: 7%;
+  height: 69%;
+  z-index: 1;
+}
+.stage-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.stage-items.visible {
+  opacity: 1;
+}
+
+.slot {
+  position: relative;
+  width: 28%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  transition: transform 0.3s;
+}
+
+.slot.picked .item {
+  transform: scale(1.06);
+}
+
+.theatre,
+.theatre-floor,
+.curtain {
+  pointer-events: none;
+}
+
+.result-text {
+  position: absolute;
+  top: 86%;
+  left: 14%;
+  width: 72%;
+  z-index: 5;
+  text-align: center;
+  font-family: "TTMoonsLight", serif;
+  font-style: italic;
+  color: #060A20;
+  opacity: 0;
+  transition: opacity 1s;
+  pointer-events: none;
+}
+
+.result-text p {
+  font-size: 1.9vw;
+  line-height: 1.2;
+}
+
+.result-text .result-source {
+  margin-top: 0.8vw;
+  font-size: 1.3vw;
+}
+
+.result-text.show {
+  opacity: 1;
+}
+.stage {
+  width: 104vw;
+
+}
+
+.stage-items {
+  top: 36%;
+  height: 36%;
+}
+
+.item {
+  object-position: center center;
+}
+
+.result-text {
+  top: 87%;
+}
+.screen2 {
+  padding-bottom: 6vw;
+}
+
+.stage-section {
+  overflow: hidden;
+}
+
+.stage {
+  width: 104%;
+  margin: 0 0 0 -2%;
+}
+
+.result-text {
+  left: 17%;
+  width: 66%;
+  text-align: left;
+}
+
+.theatre {
+  clip-path: inset(0 0 16.5% 0);
+}
+
+.theatre-floor {
+  clip-path: inset(83.5% 0 0 0);
+}
+.screen3 {
+  position: relative;
+  padding: 8vw 4.2vw;
+}
+
+.screen3-title {
+  font-family: "Kudry", serif;
+  font-size: 6.9vw;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.screen3-text {
+  margin-left: 2.8vw;
+  margin-top: 4vw;
+  max-width: 63vw;
+}
+
+.screen3-text p {
+  font-family: "TTMoons", serif;
+  font-size: 2.5vw;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.mask-block {
+  margin: 4vw 0 0 0;
+  width: 48vw;
+}
+
+.mask-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform-origin: left center;
+}
+
+.fact {
+  margin-top: 2vw;
+  padding-left: 2.8vw;
+  font-family: "TTMoonsLight", serif;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.fact p {
+  font-size: 1.9vw;
+  line-height: 1.2;
+}
+
+.fact .fact-source {
+  margin-top: 0.6vw;
+  font-size: 1.3vw;
+}
+.mask-block.mask-block-right {
+  margin-left: auto;
+  margin-right: 2vw;
+}
+
+.mask-block.mask-block-right .mask-img {
+  transform-origin: right center;
+}
+
+.mask-block.mask-block-right .fact {
+  padding-left: 0;
+  width: 36vw;
+  margin-left: auto;
+}
+.screen4 {
+  position: relative;
+  padding: 8vw 4.2vw;
+}
+
+.screen4-title {
+  font-family: "Kudry", serif;
+  font-size: 6.9vw;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.screen4-text {
+  margin-left: 2.8vw;
+  margin-top: 4vw;
+  max-width: 63vw;
+}
+
+.screen4-text p {
+  font-family: "TTMoons", serif;
+  font-size: 2.5vw;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.screen4-text p + p {
+  margin-top: 3vw;
+}
+
+.screen4-fact {
+  margin: 4vw 0 0 2.8vw;
+  max-width: 63vw;
+  padding-left: 0;
+}
+.pana-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6vw 0 0 0;
+  height: 22vw;
+}
+
+.pana {
+  display: block;
+  width: 18%;
+  height: 100%;
+  object-fit: contain;
+}
+.pana-section {
+  min-height: 100vh;
+  padding: 0 4.2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pana-row {
+  height: 34vw;
+  margin: 0;
+}
+
+.pana {
+  width: 19%;
+}
+
+.screen4-fact {
+  margin: 3vw 0 0 2.8vw;
+}
+.screen4 {
+  padding-bottom: 0;
+}
+
+.pana-section {
+  justify-content: flex-start;
+  padding-top: 2vw;
+}
+
+.screen4-fact {
+  max-width: 70vw;
+}
+
+.screen4-fact p {
+  font-family: "TTMoonsLight", serif;
+  font-style: italic;
+  font-size: 1.9vw;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.screen5 {
+  position: relative;
+  padding: 8vw 4.2vw 4vw;
+}
+
+.screen5-title {
+  font-family: "Kudry", serif;
+  font-size: 6.9vw;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.screen5-text {
+  margin-left: 2.8vw;
+  margin-top: 4vw;
+  max-width: 50vw;
+}
+
+.screen5-text p {
+  font-family: "TTMoons", serif;
+  font-size: 2.5vw;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.outfits {
+  height: 100vh;
+}
+
+.outfit-stage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.outfit-stage .outfit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 75vw;
+  height: auto;
+  object-fit: initial;
+}
+.outfit-stage .outfit-2 {
+  translate: -8vw 0;
+}
+.screen5-end-text {
+  margin-left: 2.8vw;
+  max-width: 52vw;
+}
+
+.screen5-end-text p {
+  font-family: "TTMoons", serif;
+  font-size: 1.6vw;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.finale {
+  padding: 10vw 4.2vw 8vw;
+}
+
+.finale-title {
+  font-family: "Kudry", serif;
+  font-size: 6.9vw;
+  font-weight: normal;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.footer {
+  margin-top: 12vw;
+}
+
+.credits {
+  display: flex;
+  gap: 8vw;
+}
+
+.credit-name {
+  font-family: "TTMoons", serif;
+  font-size: 1.3vw;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.credit-role {
+  margin-top: 0.4vw;
+  font-family: "Kudry", serif;
+  font-size: 3vw;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.nav {
+  margin-top: 8vw;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  font-family: "TTMoons", serif;
+  font-size: 1.3vw;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.nav-title {
+  margin-top: 1.2vw;
+  font-family: "Kudry", serif;
+  font-size: 3vw;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.nav-list a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.nav-list a:hover {
+  opacity: 0.6;
+}

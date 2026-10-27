@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Kudry";
+  src: url("../fonts/kudry_weird-headline.otf");
+}
+
+@font-face {
+  font-family: "Carla";
+  src: url("../fonts/CarlaSansLight.ttf");
+}
+@font-face {
+  font-family: "TTMoons";
+  src: url("../fonts/ttmoons-regular.otf");
+}
+@font-face {
+  font-family: "TTMoonsLight";
+  src: url("../fonts/ttmoons-light-italic.otf");
+}

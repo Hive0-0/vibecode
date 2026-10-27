@@ -1,0 +1,181 @@
+@media (max-width: 768px) {
+
+  /* Общее */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* На iPhone fixed-фон не работает, поэтому фон на отдельном слое */
+  body {
+    background-image: none;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url("../images/background.png") center top / cover no-repeat;
+  }
+
+  /* Заголовки: разрешаем перенос строк, размер под телефон */
+  .cover-title,
+  .screen2-title,
+  .screen3-title,
+  .screen4-title,
+  .screen5-title,
+  .finale-title {
+    font-size: 10.5vw;
+    line-height: 1.05;
+    white-space: normal;
+  }
+
+  /* Отступы экранов */
+  .screen2, .screen3, .screen4, .screen5 {
+    padding: 14vw 5vw 8vw;
+  }
+  .screen4 {
+    padding-bottom: 6vw;
+  }
+  .screen5-end {
+    padding: 14vw 5vw;
+  }
+
+  /* Основные тексты */
+  .screen2-text,
+  .screen3-text,
+  .screen4-text,
+  .screen5-text,
+  .screen5-end-text {
+    margin-left: 0;
+    margin-top: 6vw;
+    max-width: none;
+  }
+  .screen2-text p,
+  .screen3-text p,
+  .screen4-text p,
+  .screen5-text p,
+  .screen5-end .screen5-end-text p {
+    font-size: 4.8vw;
+    line-height: 1.25;
+  }
+  .screen2-text p + p,
+  .screen4-text p + p {
+    margin-top: 5vw;
+  }
+
+  /* Факты (Light Italic) */
+  .fact p,
+  .screen4-fact p {
+    font-size: 4vw;
+    line-height: 1.25;
+  }
+  .fact .fact-source {
+    font-size: 3.2vw;
+    margin-top: 1.5vw;
+  }
+
+  /* Обложка */
+  .cover {
+    padding: 8vw 5vw 36vw;
+  }
+  .ticket {
+    margin-top: 10vw;
+    margin-left: -10vw;
+  }
+  .ticket-part {
+    height: 64vw;
+  }
+  .star {
+    width: 34vw;
+    right: 3vw;
+    bottom: 2vw;
+  }
+
+  /* Театр */
+  .stage-section {
+    padding-bottom: 32vw;
+  }
+  .result-text {
+    top: 103%;
+    left: 5%;
+    width: 90%;
+    color: #ffffff;
+  }
+  .result-text p {
+    font-size: 4vw;
+  }
+  .result-text .result-source {
+    font-size: 3.2vw;
+    margin-top: 2vw;
+  }
+
+  /* Маски */
+  .mask-block {
+    width: 82vw;
+    margin-top: 12vw;
+  }
+  .mask-block .fact {
+    padding-left: 0;
+    margin-top: 4vw;
+  }
+  .mask-block.mask-block-right {
+    margin-right: 0;
+  }
+  .mask-block.mask-block-right .fact {
+    width: 100%;
+  }
+
+  /* Экран с вещами: два ряда вместо одного */
+  .pana-section {
+    padding: 6vw 5vw 0;
+  }
+  .pana-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    height: auto;
+    margin: 0;
+  }
+  .pana {
+    width: 31%;
+    height: 38vw;
+  }
+  .screen4-fact {
+    margin: 6vw 0 0 0;
+    max-width: none;
+  }
+
+  /* Образы на весь экран */
+  .outfit-stage .outfit {
+    width: 100vw;
+  }
+  .outfit-stage .outfit-2 {
+    translate: -11vw 0;
+  }
+
+  /* Финал */
+  .finale {
+    padding: 16vw 5vw 12vw;
+  }
+  .footer {
+    margin-top: 20vw;
+  }
+  .credits {
+    gap: 8vw;
+  }
+  .credit-name,
+  .nav-list li {
+    font-size: 4vw;
+  }
+  .credit-role,
+  .nav-title {
+    font-size: 8vw;
+  }
+  .nav {
+    margin-top: 14vw;
+  }
+}
+
+/* @media screen and (min-width: 1921px) {
+Дополнительно большие экраны } 
+Ориентация добавляется по необходимости и доп диапазоны тоже */
